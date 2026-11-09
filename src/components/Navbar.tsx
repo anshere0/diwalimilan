@@ -133,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Audio Toggle */}
             <button
               onClick={handleAudioToggle}
-              title={isPlaying ? 'Mute Festive Music' : 'Play Festive Ambient Music'}
+              title={isPlaying ? 'Mute Diwali Music' : 'Play Festive Diwali Music (Sitar & Shenhai)'}
               className={`p-2.5 sm:px-3.5 sm:py-2 rounded-full border transition-all text-xs sm:text-sm flex items-center gap-1.5 min-h-[44px] ${
                 isPlaying
                   ? 'border-gold bg-gold/20 text-gold shadow-gold-glow font-bold'
@@ -146,7 +146,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <VolumeX className="w-4 h-4" />
               )}
               <span className="hidden sm:inline font-sans text-xs font-semibold">
-                {isPlaying ? 'Sound ON' : 'Ambient'}
+                {isPlaying ? 'Diwali Music ON' : 'Diwali Music'}
               </span>
             </button>
 
