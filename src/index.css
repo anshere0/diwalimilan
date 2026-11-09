@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: #100C0D;
+    color: #F5EBDD;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  /* Custom Golden Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #181315;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4B1627;
+    border-radius: 4px;
+    border: 1px solid rgba(214, 173, 96, 0.4);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D6AD60;
+  }
+}
+
+/* Gold Text Gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FFF1CA 0%, #D6AD60 50%, #B08838 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-marigold-gradient {
+  background: linear-gradient(135deg, #FFE082 0%, #E89A27 50%, #FF6F1E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle Indian Mandalas / Geometric Borders */
+.gold-border {
+  border: 1px solid rgba(214, 173, 96, 0.3);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(214, 173, 96, 0.5);
+  box-shadow: 0 0 15px rgba(214, 173, 96, 0.15);
+}
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(214, 173, 96, 0.7) 50%, transparent 100%);
+}
+
+.marigold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(232, 154, 39, 0.7) 50%, transparent 100%);
+}
+
+/* Floating Diya Flame */
+.diya-flame {
+  background: radial-gradient(circle at 50% 80%, #FFFFFF 0%, #FFF3B0 25%, #FFB703 55%, #FB8500 80%, transparent 100%);
+  border-radius: 50% 50% 35% 35% / 60% 60% 40% 40%;
+  filter: drop-shadow(0 0 10px #FFB703) drop-shadow(0 0 22px #FB8500);
+}
+
+/* Prevent tap highlight gray flash on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
