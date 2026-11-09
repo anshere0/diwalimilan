@@ -366,8 +366,7 @@ export const voteForAward = async (
    ========================================================================== */
 
 export const verifyAdminPasscode = (passcode: string): boolean => {
-  const storedCode = getLocal<string>(STORAGE_KEYS.ADMIN_CODE, 'diwali2026');
-  return passcode.trim() === storedCode;
+  return passcode.trim() === '2026diwali';
 };
 
 export const exportGuestsToCSV = () => {

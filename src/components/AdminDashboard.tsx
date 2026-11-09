@@ -70,7 +70,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
       setIsAuthenticated(true);
       setAuthError('');
     } else {
-      setAuthError('Invalid passcode. Default is "diwali2026"');
+      setAuthError('Invalid passcode. Default is "2026diwali"');
     }
   };
 
@@ -155,7 +155,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <form onSubmit={handleLogin} className="w-full max-w-xs space-y-3">
               <input
                 type="password"
-                placeholder="Default: diwali2026"
+                placeholder="Default: 2026diwali"
                 value={passcode}
                 onChange={e => setPasscode(e.target.value)}
                 className="w-full px-4 py-2.5 rounded-xl bg-midnight border border-gold/30 text-ivory text-xs text-center tracking-widest focus:border-gold"
